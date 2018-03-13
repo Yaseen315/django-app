@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalog.apps.CatalogConfig',
+    'import_export',
+    'rest_framework',
 ]
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
+#The default value is False. It determines if the library will use database transactions on data import, just to be on the safe side.
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

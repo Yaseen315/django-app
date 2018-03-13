@@ -1,6 +1,6 @@
 from django.db import models
 
-class Artist(models.Model):
+class ARTISTS(models.Model):
     id = models.IntegerField(max_length=20), 'primary_key=True'
     BandName = models.CharField(max_length=20)
     Manager = models.CharField(max_length=20)
